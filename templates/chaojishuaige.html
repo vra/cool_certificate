@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+{% block image %}
+	{% if done %}
+		<img src = "{% static "imgs/chaojishuaige_out.jpg"%}">	
+	{% else %}
+		<img src = "{% static "imgs/chaojishuaige.jpg"%}">	
+	{% endif %}
+{% endblock %}

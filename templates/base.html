@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		酷证书
+	</title>
+	<meta charset='utf-8'>
+</head>
+
+<body>
+	<div style="width: 50%; margin: 0 auto">
+		{% block image %}
+			(no image)
+		{% endblock %}
+	</div>	
+	
+	<div style="width: 50%; margin: 0 auto; margin-top: 60px;">
+		<form method="post" action="">
+		{% csrf_token %}
+		<table>
+			{{ form.as_table }}
+		</table>
+		<input type="submit" name="submit" value="确认"> 
+		</form>
+	</div>
+	
+</body>
+</html>
